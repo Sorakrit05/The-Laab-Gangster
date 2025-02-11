@@ -1,4 +1,4 @@
-Red 
+Red // meat
 1.Beef broth
 2.Beef
 3.Fried garlic
@@ -7,7 +7,8 @@ Red
 6.Bile
 7.Blood
 8.Offal
-Orange
+
+Orange // spice
 1.Fragrant // ProHom
 2.Fennel Seed
 3.Makhaen // มะแขว่น (ไม่มีภาษาอังกฤษ คำทับศัพท์)
@@ -16,7 +17,8 @@ Orange
 6.Cardamom
 7.Chili Spur Pepper
 8.Nut meg
-Green
+
+Green // vegetables
 1.Beal fruit // Matoom
 2.Fish Mint // KaowTong
 3.Olive 
@@ -30,7 +32,8 @@ Green
 11. Damocles tree // Burn Pega
 12. Parsley
 13. Para cress // Tooth-ache Plant
-Brown
+
+Brown // herb
 1. Makwaen // มะแขว่น
 2. Coriander
 3. Nut meg
