@@ -1,23 +1,23 @@
 Orange
-1.Gain 1 extra spices ingredient
-2.Loss 1 spices ingredient
-3.Steal spices ingredients from other players
-4.Steal spices ingredients from other players on the Right
+1.Gain 1 extra spices ingredient // +6
+2.Loss 1 spices ingredient // -7
+3.Steal spices ingredients from other players // 2
+4.Steal spices ingredients from other players on the Right // 1
 Green
-1.Gain 1 extra vegetables ingredient
-2.Lose 1 vegetables ingredient
-3.Steal vegetables ingredient from other players on the Left
-4.Steal vegetables ingredient from other players on the Right
+1.Gain 1 extra vegetables ingredient // +4
+2.Lose 1 vegetables ingredient // -4
+3.Steal vegetables ingredient from other players on the Left // 2
+4.Steal vegetables ingredient from other players on the Right // 1
 Brown
-1.Gain 1 extra herbs ingredient
-2.Lose 1 herbs ingredient
-3.Steal herbs ingredient from other players on the Right
-4.Steal herbs ingredient from other players on the Left
-5.Steal herbs ingredient from other players 
+1.Gain 1 extra herbs ingredient // +5
+2.Lose 1 herbs ingredient // -1
+3.Steal herbs ingredient from other players on the Right // 1
+4.Steal herbs ingredient from other players on the Left // 1
+5.Steal herbs ingredient from other players // 1
 Red
-1.Gain 1 extra meats ingredient
-2.Lose 1 meats ingredient
-3.Steal meats ingredient from other players on the Right
-4.Steal meats ingredient from other players on the Left
-5.Steal meats ingredient from other players 
+1.Gain 1 extra meats ingredient // +5
+2.Lose 1 meats ingredient // -4
+3.Steal meats ingredient from other players on the Left // 1 
+4.Steal meats ingredient from other players on the Right // 1
+5.Steal meats ingredient from other players // 1
 
