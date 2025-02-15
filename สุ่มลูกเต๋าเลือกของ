@@ -1,0 +1,92 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <map>
+#include <vector>
+using namespace std;
+
+class GangsterLab {
+public:
+    string name;
+    map<string, int> ingredients;
+    vector<string> meatOptions = {"Beef", "Pork", "Beef broth", "Fried garlic", "Buffalo", "Bile", "Blood", "Offal"};
+    vector<string> spiceOptions = {"Makwaen", "Fragrant", "Fennel Seed", "Dried Galangal", "Cardamom", "Chili Spur Pepper", "Caraway"};
+    vector<string> herbOptions = {"Makwaen", "Coriander", "Nutmeg", "Star Anise", "Black Pepper", "Long Pepper", "Clove", "Cinnamon"};
+    vector<string> vegetableOptions = {"Matoom", "KaowTong", "Oreille", "Deeplygung", "Makwaen-infused fish sauce", "Dried Fennel Seed", "Phak paem", "Vietnamese Coriander", "Damocles tree", "Parsley", "Para cress", "Olive"};
+
+    GangsterLab(string n) {
+        name = n;
+        ingredients["Meat"] = 0;
+        ingredients["Spices"] = 0;
+        ingredients["Herbs"] = 0;
+        ingredients["Vegetables"] = 0;
+    }
+    
+    void rollDice() {
+        int dice = (rand() % 4) + 1;
+        string category;
+        
+        switch(dice) {
+            case 1: category = "Meat"; 
+                    cout << "You rolled Red (Meat). Please choose from the following options:\n";
+                    for (const string &meat : meatOptions) {
+                        cout << " - " << meat << "\n";
+                    }
+                    break;
+      
+            case 2: category = "Spices"; 
+                    cout << "You rolled Orange (Spices). Please choose from the following options:\n";
+                    for (const string &spice : spiceOptions) {
+                        cout << " - " << spice << "\n";
+                    }
+                    break;
+                      
+            case 3: category = "Herbs"; 
+                    cout << "You rolled Brown (Herbs). Please choose from the following options:\n";
+                    for (const string &herb : herbOptions) {
+                        cout << " - " << herb << "\n";
+                    }
+                    break;
+                      
+            case 4: category = "Vegetables"; 
+                    cout << "You rolled Green (Vegetables). Please choose from the following options:\n";
+                     for (const string &vegetable : vegetableOptions) {
+                        cout << " - " << vegetable << "\n";
+                    }
+                    break;
+                       
+            default: cout << "Roll failed! You got nothing!\n"; return;
+        }
+        
+        string item;
+        cin >> item;
+        ingredients[category]++;
+        cout << name << " obtained " << item << "!\n";
+    }
+    
+    bool hasAllIngredients() {
+        return ingredients["Meat"] > 0 && ingredients["Spices"] > 0 && ingredients["Herbs"] > 0 && ingredients["Vegetables"] > 0;
+    }
+};
+
+int main() {
+    srand(time(0));
+    
+    GangsterLab player("Gangster Lab");
+    
+    cout << "Game Start! Gangster Lab must collect secret ingredients to make Lab!\n";
+    
+    while (!player.hasAllIngredients()) {
+        cout << "\nRolling the dice to find ingredients...\n";
+        player.rollDice();
+        
+        cout << "Current collected ingredients:\n";
+        for (auto &pair : player.ingredients) {
+            cout << " - " << pair.first << ": " << pair.second << "\n";
+        }
+    }
+    
+    cout << "\nCongratulations! You have collected all the ingredients and can now make Lab!" << endl;
+    
+    return 0;
+}
